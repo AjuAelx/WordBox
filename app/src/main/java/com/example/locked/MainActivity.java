@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         verses = findViewById(R.id.verses);
         outOf = findViewById(R.id.outOf);
         count = findViewById(R.id.count);
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void newRandomVerse() {
 
-        number = random.nextInt(61-1)+1;
+        number = random.nextInt(81-1)+1;
         if (accessed.contains(number)){
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             duplicate.setText("");
             accessed.add(number);
-            if (accessed.size() == 60){
+            if (accessed.size() == 80){
                 accessed.clear();
                 Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();
                 clicked = 0;
@@ -344,6 +345,88 @@ public class MainActivity extends AppCompatActivity {
         else if (number == 60){
             verses.setText("പ്രത്യാശയിൽ സന്തോഷിക്കുവിൻ; ക്ലേശങ്ങളിൽ സഹനശീലരായിരിക്കുവിൻ; പ്രാർത്ഥനയിൽ സ്ഥിരതയുള്ളവരായിരിക്കുവിൻ.");
             books.setText("റോമാ 12.12");
+        }
+        //-----------------------------------------------------------------------------------------
+        if (number == 61){
+            verses.setText("ആത്മപ്രശംസ ചെയ്യരുത്, മറ്റുള്ളവർ നിന്നെ പ്രശംസിക്കട്ടെ. അന്യന്റെ നാവാണ്, നിന്റേതല്ല, അതു ചെയ്യേണ്ടത്. ");
+            books.setText("സുഭാഷിതങ്ങൾ 27.2");
+        }
+        else if (number == 62){
+            verses.setText("കർത്താവേ, എന്റെ ശക്തിയുടെ ഉറവിടമേ, ഞാൻ അങ്ങയെ സ്നേഹിക്കുന്നു.");
+            books.setText("സങ്കീർത്തനം 18.1");
+        }
+        else if (number == 63){
+            verses.setText("കൂടെകൂടെടെ ഗുണദോഷിക്കപ്പെട്ടിട്ടും മർക്കടമുഷ്ടിപിടിക്കുന്നവൻ രക്ഷപ്പെടാനാവാത്ത തകർച്ചയിൽ പെട്ടെന്നു പതിക്കും..");
+            books.setText("സുഭാഷിതങ്ങൾ 29.1");
+        }
+        else if (number == 64){
+            verses.setText("അനുസരിക്കാൻ സന്നദ്ധരെങ്കിൽ നിങ്ങൾ ഐശ്വര്യം ആസ്വദിക്കും.");
+            books.setText("ഏശയ്യാ 1.19");
+        }
+        else if (number == 65){
+            verses.setText("കർത്താവേ, അങ്ങയുടെ കാരുണ്യം എന്നിൽനിന്ന് പിൻവലിക്കരുതേ ! അവിടുത്തെ സ്നേഹവും വിശ്വസ്തതയും എന്നെ സംരക്ഷിക്കട്ടെ.");
+            books.setText("സങ്കീർത്തനം 40.11");
+        }
+        else if (number == 66){
+            verses.setText("വിശ്വസ്തൻ സമൃദ്ധമായി അനുഗ്രഹിക്കപ്പെടും.");
+            books.setText("സുഭാഷിതങ്ങൾ 28.20");
+        }
+        else if (number == 67){
+            verses.setText("നിനക്ക് ചെയ്യാൻ കഴിവുള്ള നന്മ അത് ലഭിക്കാൻ അവകാശമുള്ളവർക്ക് നിഷേധിക്കരുത്.");
+            books.setText("സുഭാഷിതങ്ങൾ 3.27");
+        }
+        else if (number == 68){
+            verses.setText("ബലമുള്ളവരായ നാം ബലഹീനരുടെ പോരായ്മകൾ സഹിക്കുകയാണ് വേണ്ടത്. ");
+            books.setText("റോമാ 15.1");
+        }
+        else if (number == 69){
+            verses.setText("ഓരോരുത്തർക്കും അവകാശപ്പെട്ടിരുന്നത് കൊടുക്കുവിൻ.");
+            books.setText("റോമാ 13.7");
+        }
+        else if (number == 70){
+            verses.setText("പ്രാർത്ഥനയിൽ സ്ഥിരതയുള്ളവരായിരിക്കുവിൻ.");
+            books.setText("റോമാ 12.12");
+        }
+        //-----------------------------------------------------------------------------------------
+        if (number == 71){
+            verses.setText("കർത്താവായ ദൈവമാണ് എന്റെ ബലം.");
+            books.setText("ഹബക്കൂക്ക് 3.19");
+        }
+        else if (number == 72){
+            verses.setText("നീതിയുടെ പരിണതഫലം പ്രശാന്തതയും എന്നേയ്\u200Cക്കുമുള്ള പ്രത്യാശയുമായിരിക്കും");
+            books.setText("ഏശയ്യാ 32.17");
+        }
+        else if (number == 73){
+            verses.setText("കർത്താവാണ് എല്ലാ നന്മയും നൽകുന്നത്.");
+            books.setText("തോബിത്  4.19");
+        }
+        else if (number == 74){
+            verses.setText("നല്ല വാക്ക് ദാനത്തേക്കാൾ വിശിഷ്ടമാണ്.");
+            books.setText("പ്രഭാഷകൻ 18.16");
+        }
+        else if (number == 75){
+            verses.setText("കർത്താവിൽ നിന്നാണ് രക്ഷ.");
+            books.setText("യോനാ 2.9");
+        }
+        else if (number == 76){
+            verses.setText("കർത്താവിന്റെ അനുഗ്രഹമാണ് ദൈവഭക്തന് സമ്മാനം.");
+            books.setText("പ്രഭാഷകൻ 11.22");
+        }
+        else if (number == 77){
+            verses.setText("ദൈവവചനം ആദരിക്കുന്നവൻ ഉൽക്കർഷം നേടും. കർത്താവിൽ ആശ്രയിക്കുന്നവൻ ഭാഗ്യവാൻ.");
+            books.setText("സുഭാഷിതങ്ങൾ 16.20");
+        }
+        else if (number == 78){
+            verses.setText("കർത്താവിൽ വിശ്വാസമർപ്പിക്കുന്നവൻ സുരക്ഷിതനത്രേ.");
+            books.setText("സുഭാഷിതങ്ങൾ 29.25");
+        }
+        else if (number == 79){
+            verses.setText("കർത്താവായിരിക്കും നിന്റെ നിത്യമായ പ്രകാശം.");
+            books.setText("ഏശയ്യാ 60.19");
+        }
+        else if (number == 80){
+            verses.setText("സമ്പതേറുമ്പോൾ അതനുസരിച്ചു ദാനം ചെയ്യുക.");
+            books.setText("തോബിത് 4.8");
         }
     }
 }
