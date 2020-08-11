@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void newRandomVerse() {
 
-        number = random.nextInt(81-1)+1;
+        number = random.nextInt(101-1)+1;
         if (accessed.contains(number)){
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             duplicate.setText("");
             accessed.add(number);
-            if (accessed.size() == 80){
+            if (accessed.size() == 100){
                 accessed.clear();
                 Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();
                 clicked = 0;
@@ -427,6 +427,88 @@ public class MainActivity extends AppCompatActivity {
         else if (number == 80){
             verses.setText("സമ്പതേറുമ്പോൾ അതനുസരിച്ചു ദാനം ചെയ്യുക.");
             books.setText("തോബിത് 4.8");
+        }
+        //-----------------------------------------------------------------------------------------
+        if (number == 81){
+            verses.setText(" നിങ്ങളുടെ ദൈവമായ കർത്താവ് കരുണയുള്ള ദൈവമാണ്.");
+            books.setText("നിയമാവർത്തനം 4.31");
+        }
+        else if (number == 82){
+            verses.setText("ദൈവത്തിൽ ആശ്രയിക്കുന്നവൻ വീണ്ടും ശക്തി പ്രാപിക്കും.");
+            books.setText("ഏശയ്യാ 40.31");
+        }
+        else if (number == 83){
+            verses.setText("വിശുദ്ധിയിലേക്കാണ് ദൈവം നമ്മെ വിളിച്ചിരിക്കുന്നത്.");
+            books.setText("1 തെസലോനിക്ക 4.7");
+        }
+        else if (number == 84){
+            verses.setText("തിന്മയ്ക്ക് തിന്മയോ നിന്ദനത്തിന് നിന്ദനമോ പകരം കൊടുക്കാതെ അനുഗ്രഹിക്കുവിൻ.");
+            books.setText("1 പത്രോസ് 3.9");
+        }
+        else if (number == 85){
+            verses.setText("കരുണയുള്ളവർ ഭാഗ്യവാന്മാർ, എന്തെന്നാൽ അവർക്ക് കരുണ ലഭിക്കും.");
+            books.setText("വി. മത്തായി 5.7");
+        }
+        else if (number == 86){
+            verses.setText("ദയാശീലൻ തനിക്കു തന്നെ ഗുണം ചെയ്യുന്നു.");
+            books.setText("സുഭാഷിതങ്ങൾ 11.17");
+        }
+        else if (number == 87){
+            verses.setText("ക്ഷമാശീലന് കുറച്ചുകാലത്തേയ്ക്കു മാത്രമേ സഹിക്കേണ്ടി വരികയുള്ളു.");
+            books.setText("പ്രഭാഷകൻ 1.23");
+        }
+        else if (number == 88){
+            verses.setText("അദ്ധ്വാനിക്കുന്നവന് സുഖനിദ്ര ലഭിക്കുന്നു.");
+            books.setText("സഭാപ്രസംഗം 5.12");
+        }
+        else if (number == 89){
+            verses.setText("നീ എനിക്ക് വിലപ്പെട്ടവനും ബഹുമാന്യനും പ്രിയങ്കരനുമാണ്.");
+            books.setText("ഏശയ്യാ 43.4");
+        }
+        else if (number == 90){
+            verses.setText("ദാനമായി നിങ്ങൾക്കു കിട്ടി. ദാനമായിത്തന്നെ കൊടുക്കുവിൻ. ");
+            books.setText("വി. മത്തായി 10.8");
+        }
+        //-----------------------------------------------------------------------------------------
+        if (number == 91){
+            verses.setText("ജീവിതകാലം മുഴുവൻ നിന്റെ പ്രവൃത്തികൾ നീതിനിഷ്ഠമായിരിക്കട്ടെ.");
+            books.setText("തോബിത് 4.5");
+        }
+        else if (number == 92){
+            verses.setText("ഭയപ്പെടേണ്ട ഞാൻ നിന്നെ രക്ഷിച്ചിരിക്കുന്നു.");
+            books.setText("ഏശയ്യാ 43.1");
+        }
+        else if (number == 93){
+            verses.setText("ശക്തനും ധീരനുമായിരിക്കുക. നിന്റെ ദൈവമായ കർത്താവ് നീ പോകുന്നിടത്തെല്ലാം നിന്നോടുകൂടെയുണ്ടായിരിക്കും.");
+            books.setText("ജോഷ്വാ 1.7");
+        }
+        else if (number == 94){
+            verses.setText("അമ്മയെ മഹത്വപ്പെടുത്തുന്നവൻ നിക്ഷേപം കൂട്ടിവയ്ക്കുന്നു.");
+            books.setText("പ്രഭാഷകൻ 3.4");
+        }
+        else if (number == 95){
+            verses.setText("ദൈവഭക്തിയാണ് ജ്ഞാനത്തിന്റെ ഉറവിടം.");
+            books.setText("പ്രഭാഷകൻ 9.10");
+        }
+        else if (number == 96){
+            verses.setText("ദൈവത്തോട് ചേർന്നുനില്ക്കുക. അവിടുന്ന് നിങ്ങളോടും ചേർന്ന് നിൽക്കും.");
+            books.setText("യാക്കോബ് 4.8");
+        }
+        else if (number == 97){
+            verses.setText("നിന്റെ എല്ലാ പ്രവൃത്തികളും ദൈവവിചാരത്തോടെയാകട്ടെ.");
+            books.setText("സുഭാഷിതങ്ങൾ 3.6");
+        }
+        else if (number == 98){
+            verses.setText("എന്റെ രക്ഷകനായ ദൈവത്തിനുവേണ്ടി ഞാൻ കാത്തിരിക്കും. ");
+            books.setText("മിക്കാ 7.7");
+        }
+        else if (number == 99){
+            verses.setText("എന്റെ ദൈവം എന്റെ പ്രാർത്ഥന കേൾക്കും.");
+            books.setText("മിക്കാ 7.7");
+        }
+        else if (number == 100){
+            verses.setText("നന്മ ചെയ്യുന്നതിലും നിങ്ങൾക്കുള്ളവ പങ്കുവയ്ക്കുന്നതിലും ഉപേക്ഷ വരുത്തരുത്.");
+            books.setText("ഹെബ്രായർ 13.16");
         }
     }
 }
