@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     private void newRandomVerse() {
 
-        number = random.nextInt(101-1)+1;
+        number = random.nextInt(111-1)+1;
         if (accessed.contains(number)){
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             duplicate.setText("");
             accessed.add(number);
-            if (accessed.size() == 100){
+            if (accessed.size() == 110){
                 accessed.clear();
                 Toast.makeText(this, "Refreshed", Toast.LENGTH_SHORT).show();
                 clicked = 0;
@@ -509,6 +509,47 @@ public class MainActivity extends AppCompatActivity {
         else if (number == 100){
             verses.setText("നന്മ ചെയ്യുന്നതിലും നിങ്ങൾക്കുള്ളവ പങ്കുവയ്ക്കുന്നതിലും ഉപേക്ഷ വരുത്തരുത്.");
             books.setText("ഹെബ്രായർ 13.16");
+        }
+        //-----------------------------------------------------------------------------------------
+        if (number == 101){
+            verses.setText("ഞാൻ നിന്റെ കൂടെ ഉണ്ടായിരിക്കും. നിന്നെ ഞാൻ അനുഗ്രഹിക്കുകയും ചെയ്യും.");
+            books.setText("ഉല്പത്തി 26.3");
+        }
+        else if (number == 102){
+            verses.setText("എന്റെ ദൈവമേ, അങ്ങയുടെ ഹിതം നിറവേറ്റുകയാണ്\u200C എന്റെ സന്തോഷം, അങ്ങയുടെ നിയമം എന്റെ ഹൃദയത്തിലുണ്ട്.");
+            books.setText("സങ്കീർത്തനം 40.8");
+        }
+        else if (number == 103){
+            verses.setText("കർത്താവിന്റെ പദ്ധതികൾ ശാശ്വതമാണ്; അവിടുത്തെ ചിന്തകൾ തലമുറകളോളം നിലനിൽക്കുന്നു.");
+            books.setText("സങ്കീർത്തനം 33.11");
+        }
+        else if (number == 104){
+            verses.setText("കർത്താവ് നിഷ്കളങ്കരുടെ ദിനങ്ങൾ അറിയുന്നു; അവരുടെ അവകാശം ശാശ്വതമായിരിക്കും.");
+            books.setText("സങ്കീർത്തനം 37.18");
+        }
+        else if (number == 105){
+            verses.setText("തന്റെ ദൈവത്തിൽ ആശ്രയിച്ചിരുന്നതുകൊണ്ട് അവന് ഒരു പോറൽ പോലും ഏറ്റതായി കണ്ടില്ല.");
+            books.setText("ദാനിയേൽ 6.23");
+        }
+        else if (number == 106){
+            verses.setText("ഒരാൾ ഉദാരമായി നൽകിയിട്ടും കൂടുതൽ ധനികനാകുന്നു. നൽകേണ്ടത് പിടിച്ചുവച്ചിട്ടും മറ്റൊരുവന്റെ ദാരിദ്ര്യം വർദ്ധിക്കുന്ന.");
+            books.setText("സുഭാഷിതങ്ങൾ 11.24");
+        }
+        else if (number == 107){
+            verses.setText("കർത്താവിനെ കാത്തിരിക്കുന്നവരേ, ദുർബലരാകാതെ ധൈര്യം അവലംബിക്കുവിൻ.");
+            books.setText("സങ്കീർത്തനം 31.24");
+        }
+        else if (number == 108){
+            verses.setText("കർത്താവിന് നമ്മെക്കുറിച്ച് വിചാരമുണ്ട്. അവിടുന്ന് നമ്മെ അനുഗ്രഹിക്കും.");
+            books.setText("സങ്കീർത്തനം 115.12");
+        }
+        else if (number == 109){
+            verses.setText("പിതാവിന്റെ അനുഗ്രഹം മക്കളുടെ ഭവനങ്ങളെ ബലവത്താക്കും.");
+            books.setText("പ്രഭാഷകൻ 3.9");
+        }
+        else if (number == 110){
+            verses.setText("നന്മ ചെയ്യുന്നതിൽ നിങ്ങൾ തീക്ഷ്ണതയുള്ളവരാണെങ്കിൽ നിങ്ങളെ ഉപദ്രവിക്കാൻ ആർക്കു കഴിയും?");
+            books.setText("1 പത്രോസ് 3.13");
         }
     }
 }
